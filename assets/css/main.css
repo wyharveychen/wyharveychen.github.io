@@ -1304,12 +1304,21 @@
 			width: 100%;
 		}
 
+    
 		.image.featured {
 			display: block;
+      height: 200px;
+			width: 95%;
+			margin: 0em 0em 2em 0em;
+		}
+
+    .image.featuredshort {
+			display: block;     
+      height: 150px;
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
-
+    
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
@@ -1325,6 +1334,28 @@
 				width: auto;
 			}
 
+/* Titles */      
+     
+    .title{
+      display : table;
+      width: 100%;
+      height : 120px;      
+      *position : relative;
+      
+    }
+    .text{
+      display : table-cell;
+      text-align : center;
+      vertical-align : middle;
+      
+      *display : block;
+      *position : absolute;
+      *top : expression(
+        this.parentElement.clientHeight / 2 - this.clientHeight / 2);
+      *width : 100%;
+    }
+ 
+      
 /* Button */
 
 	input[type="button"],
@@ -1798,7 +1829,7 @@
 		/* Box */
 
 			.box {
-				padding: 2em;
+				padding: 1em;
 			}
 
 				.box.style1 {
@@ -1815,9 +1846,9 @@
 
 				.box.style2 .image {
 					position: relative;
-					left: 2em;
-					top: 2em;
-					margin: -4em 0 4em -4em;
+					left: 3em;
+					top: 3.1em;
+					margin: -4em 2em 4em -4em;
 					width: auto;
 				}
 
@@ -2298,3 +2329,140 @@
 
 		}
     
+/*Header - stellar*/
+#header {
+		padding: 5em 5em 1em 5em ;
+		text-align: center;
+	}
+
+		#header h1 {
+			margin: 0 0 0.25em 0;
+		}
+
+		#header p {
+			font-size: 1.25em;
+			letter-spacing: -0.025em;
+		}
+
+		#header.alt {
+			padding: 7em 5em 4em 5em ;
+		}
+
+			#header.alt h1 {
+				font-size: 3.25em;
+			}
+
+			#header.alt > * {
+				-moz-transition: opacity 3s ease;
+				-webkit-transition: opacity 3s ease;
+				-ms-transition: opacity 3s ease;
+				transition: opacity 3s ease;
+				-moz-transition-delay: 0.5s;
+				-webkit-transition-delay: 0.5s;
+				-ms-transition-delay: 0.5s;
+				transition-delay: 0.5s;
+				opacity: 1;
+			}
+
+			#header.alt .logo {
+				-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
+				-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
+				-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
+				transition: opacity 1.25s ease, transform 0.5s ease;
+				-moz-transition-delay: 0s;
+				-webkit-transition-delay: 0s;
+				-ms-transition-delay: 0s;
+				transition-delay: 0s;
+				display: block;
+				margin: 0 0 1.5em 0;
+			}
+
+				#header.alt .logo img {
+					display: block;
+					margin: 0 auto;
+					max-width: 75%;
+				}
+
+		@media screen and (max-width: 1280px) {
+
+			#header {
+				padding: 4em 4em 0.1em 4em ;
+			}
+
+				#header.alt {
+					padding: 6em 4em 3em 4em ;
+				}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#header {
+				padding: 4em 3em 0.1em 3em ;
+			}
+
+				#header.alt {
+					padding: 5em 3em 2em 3em ;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#header {
+				padding: 3em 2em 0.1em 2em ;
+			}
+
+				#header p {
+					font-size: 1em;
+					letter-spacing: 0;
+				}
+
+					#header p br {
+						display: none;
+					}
+
+				#header.alt {
+					padding: 4em 2em 1em 2em ;
+				}
+
+					#header.alt h1 {
+						font-size: 2.5em;
+					}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#header {
+				padding: 3em 1.5em 0.1em 1.5em ;
+			}
+
+				#header.alt {
+					padding: 4em 1.5em 1em 1.5em ;
+				}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			#header {
+				padding: 2.5em 1em 0.1em 1em ;
+			}
+
+				#header.alt {
+					padding: 3.5em 1em 0.5em 1em ;
+				}
+
+		}
+
+		body.is-loading #header.alt > * {
+			opacity: 0;
+		}
+
+		body.is-loading #header.alt .logo {
+			-moz-transform: scale(0.8) rotate(-30deg);
+			-webkit-transform: scale(0.8) rotate(-30deg);
+			-ms-transform: scale(0.8) rotate(-30deg);
+			transform: scale(0.8) rotate(-30deg);
+		}
