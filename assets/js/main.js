@@ -77,13 +77,10 @@
             $("ol#" + location.hash.substr(1)).show();
       });
       
-      //$("a").click( function(event) {
-      //  if (location.hash != ''
-			//			||	location.hash != '#') {
-							//event.preventDefault();
-							//event.stopPropagation();                            
-			//			}      
-      //});
+      
+      $(".popout").on( "click", function(event) {      
+          $("#page_" + event.target.id).show();  
+      });
 
   });
 })(jQuery);

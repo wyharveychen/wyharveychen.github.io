@@ -21,7 +21,7 @@
     <!-- Nav -->
       <nav id="nav">
         <ul class="container">
-          <li><a href="#intro" class="active">Introduction</a></li>                          
+          <li><a href="#header" class="active">Introduction</a></li>                          
           <li><a href="#publication">Publications</a></li>
           <li><a href="#project">Projects</a></li>          
           <!--li><a href="#contact">Contact</a></li-->   
@@ -36,34 +36,34 @@
           <p><br></p>          
           <p>I am a master’s graduate in Electrical Engineering (EE) at the National Taiwan University. <br>
             My research interests include machine learning, computer vision and robotic perception. <br> 
-            My recent works particularly focus on <strong>deep learning</strong> and <strong>domain adaptation</strong>, <br> a technique bring models trained in laboratory to real world effectively. 
+            My recent works focus on <strong>deep learning</strong> and <strong>domain adaptation</strong>, a technique bring models trained in laboratory to real world effectively.        
           </p>
-          <p></p>
+          <p><br></p>
           <ul class="social">
-              <li>CV<a href="#" class="icon fa-file-text-o"><span class="label"></span></a></li>                              
-              <li>GitHub<a href="https://github.com/wyharveychen" class="icon fa-github alt"><span class="label"></span></a></li>                
-              <li>Email<a href="mailto:wyharveychen@gmail.com" class="icon fa-envelope-o"><span class="label"></span></a></li>                
+              <li>CV<a href="cv/Resume--Wei Yu Chen 2017.pdf" target="_blank" class="icon fa-file-text-o"><span class="label"></span></a></li>                              
+              <li>GitHub<a href="https://github.com/wyharveychen" target="_blank" class="icon fa-github alt"><span class="label"></span></a></li>                
+              <li>Email<a href="mailto:wyharveychen@gmail.com" target="_blank" class="icon fa-envelope-o"><span class="label"></span></a></li>                
            </ul>              
            <p></p>
-          <a href="#publication" class="button big scrolly">See my publications</a>    
+          <!--a href="#publication" class="button big scrolly">See my publications</a-->    
       </header>
     </div>
     <!-- Publication -->
       <div class="wrapper style2">
         <article class="container" id="publication">
           <header>
-            <h2>Publication</h2>					
+            <h2>Publications</h2>					
           </header>
           <div class="container">
             <div class="row">
               <div class="4u 12u(mobile)">
                 <article class="box style2">
-                  <a href="#" class="image featured"><img src="images/paper1.jpg" alt="" /></a>
+                  <a class="image featured"><img src="images/paper1.jpg" alt="" /></a>
                   <h4>No More Discrimination: Cross City Adaptation of Road Scene Segmenters</h4>
                   <p style="font-size:50%;">Yi-Hsin Chen, <strong>Wei-Yu Chen</strong>, Yu-Ting Chen, Bo-Cheng Tsai,
 Yu-Chiang Frank Wang, Min Sun</p>                 
                   <h4>ICCV 2017</h4>                             
-                  <p><a href="#">[Details]</a> <a href="https://arxiv.org/pdf/1704.08509.pdf">[PDF]</a> <a href="https://yihsinchen.github.io/segmentation_adaptation/">[Site]</a></p>
+                  <p><a class = "popout" id = "paper1">[Details]</a> <a href="https://arxiv.org/pdf/1704.08509.pdf">[PDF]</a> <a href="https://yihsinchen.github.io/segmentation_adaptation/">[Site]</a></p>
                 </article>
               </div>
               <div class="4u 12u(mobile)">
@@ -72,7 +72,7 @@ Yu-Chiang Frank Wang, Min Sun</p>
                   <h4>Transfer Neural Trees for Heterogeneous Domain Adaptation</h4>
                   <p style="font-size:50%;"><strong>Wei-Yu Chen</strong>, Tzu-Ming Harry Hsu, Yao-Hung Hubert Tsai, Yu-Chiang Frank Wang, Ming-Syan Chen</p>
                   <h4>ECCV 2016</h4>              
-                  <p><a href="#">[Details]</a> <a href="http://mml.citi.sinica.edu.tw/papers/eccv2016.pdf">[PDF]</a> </p>
+                  <p><a class = "popout" id = "paper2">[Details]</a> <a href="http://mml.citi.sinica.edu.tw/papers/eccv2016.pdf">[PDF]</a> </p>
                 </article>
               </div>
               <div class="4u 12u(mobile)">
@@ -81,7 +81,7 @@ Yu-Chiang Frank Wang, Min Sun</p>
                   <h4>Unsupervised Domain Adaptation with Imbalanced Cross-Domain Data</h4>
                   <p style="font-size:50%;">Tzu-Ming Harry Hsu, <strong>Wei-Yu Chen</strong>, Cheng-An Hou, Yao-Hung Hubert Tsai, Yi-Ren Yeh and Yu-Chiang Frank Wang</p>
                   <h4>ICCV 2015</h4>
-                  <p><a href="#">[Details]</a> <a href="http://mml.citi.sinica.edu.tw/papers/ICCV_2015_Hsu.pdf">[PDF]</a> </p>
+                  <p><a class = "popout" id = "paper3">[Details]</a> <a href="http://mml.citi.sinica.edu.tw/papers/ICCV_2015_Hsu.pdf">[PDF]</a> </p>
                 </article>
               </div>
             </div>
@@ -91,7 +91,7 @@ Yu-Chiang Frank Wang, Min Sun</p>
                   <h4>Enhanced Canonical Correlation Analysis with Local Density for Cross-Domain Visual Classification</h4>
                   <p style="font-size:50%;">Wei-Jen Ko, Jheng-Ying Yu, <strong>Wei-Yu Chen</strong>, and Yu-Chiang Frank Wang</p>
                   <h4>ICASSP 2017</h4>
-                  <p><a href="#">[Details]</a> <a href="http://mml.citi.sinica.edu.tw/papers/ICCASP_2017_Ko.pdf">[PDF]</a> </p>
+                  <p><a class = "popout" id = "paper4">[Details]</a> <a href="http://mml.citi.sinica.edu.tw/papers/ICCASP_2017_Ko.pdf">[PDF]</a> </p>
                 </article>
               </div>
               <div class="4u 12u(mobile)">
@@ -99,7 +99,7 @@ Yu-Chiang Frank Wang, Min Sun</p>
                   <h4>Domain-Constraint Transfer Coding for Imbalanced Unsupervised Domain Adaptation</h4>      
                   <p style="font-size:50%;">Yao-Hung Hubert Tsai, Cheng-An Hou, <strong>Wei-Yu Chen</strong>, Yi-Ren Yeh and Yu-Chiang Frank Wang</p>
                   <h4>AAAI 2016</h4>
-                  <p><a href="#">[Details]</a> <a href="http://mml.citi.sinica.edu.tw/papers/AAAI_2016_Tsai.pdf">[PDF]</a> </p>
+                  <p><a class = "popout" id = "paper5">[Details]</a> <a href="http://mml.citi.sinica.edu.tw/papers/AAAI_2016_Tsai.pdf">[PDF]</a> </p>
                 </article>
               </div>
               <div class="4u 12u(mobile)">
@@ -107,13 +107,13 @@ Yu-Chiang Frank Wang, Min Sun</p>
                   <h4>Connecting the Dots Without Clues: Unsupervised Domain Adaptation for Cross-Domain Visual Classification</h4>                       
                   <p style="font-size:50%;"> <strong>Wei-Yu Chen</strong>, Tzu-Ming Harry Hsu, Cheng-An Hou, Yi-Ren Yeh and Yu-Chiang Frank Wang</p>
                   <h4>ICIP 2015</h4>
-                  <p><a href="#">[Details]</a> <a href="http://mml.citi.sinica.edu.tw/papers/ICIP_2015_Chen.pdf">[PDF]</a> </p>
+                  <p><a class = "popout" id = "paper6">[Details]</a> <a href="http://mml.citi.sinica.edu.tw/papers/ICIP_2015_Chen.pdf">[PDF]</a> </p>
                 </article>
               </div>
             </div>
           </div>
           <footer>             
-            <a href="#project" class="button big scrolly">See more of my projects</a>
+            <!--a href="#project" class="button big scrolly">See more of my projects</a-->
           </footer>
         </article>
       </div>
@@ -131,7 +131,8 @@ Yu-Chiang Frank Wang, Min Sun</p>
                   <div class="image featuredshort"><img src="images/projectAMMAI.png" alt="" /></div>
                   <h4>Action Recognition with SegNet</h4>      
                   <h4>Advanced Topics In Multimedia Analysis And Indexing 2015 Spring</h4>
-                  <p><a href="#">[Details]</a> <a href="https://youtu.be/EgpDtIhdL4E">[Demo Video]</a> </p>
+                                   
+                  <p> <a class = "popout" id = "proj1">[Details]</a> <a href=https://youtu.be/EgpDtIhdL4E>[Demo Video]</a> </p>
                 </article>
               </div>            
               <div class="4u 12u(mobile)">
@@ -139,7 +140,7 @@ Yu-Chiang Frank Wang, Min Sun</p>
                   <div class="image featuredshort"><img src="images/projectEUREKA.png" alt="" /></div>                   
                   <h4>EUREKA</h4>                     
                   <h4>EE Lab (Networking & Multimedia) <br> 2015 Spring</h4>
-                  <p><a href="#">[Details]</a> <a href="https://www.youtube.com/watch?v=poOeX_pXGgY">[Demo Video]</a> </p>
+                  <p><a class = "popout" id = "proj2">[Details]</a> <a href="https://www.youtube.com/watch?v=poOeX_pXGgY">[Demo Video]</a> </p>
                 </article>
               </div>
               <div class="4u 12u(mobile)">
@@ -147,7 +148,7 @@ Yu-Chiang Frank Wang, Min Sun</p>
                   <div class="image featuredshort"><img src="images/projectRobotics.png" alt="" /></div>
                   <h4>Storage Robot</h4>      
                   <h4>Robotics <br> 2013 Fall</h4>
-                  <p><a href="#">[Details]</a> <a href="https://lynnchao.files.wordpress.com/2014/01/robotics_storage_robot.pdf">[PDF]</a> <a href="https://www.youtube.com/watch?v=HgiEmOA_1hw&feature=youtu.be">[Demo Video]</a></p>
+                  <p><a class = "popout" id = "proj3">[Details]</a> <a href="https://lynnchao.files.wordpress.com/2014/01/robotics_storage_robot.pdf">[PDF]</a> <a href="https://www.youtube.com/watch?v=HgiEmOA_1hw&feature=youtu.be">[Demo Video]</a></p>
                 </article>
               </div>             
             </div>
@@ -159,7 +160,7 @@ Yu-Chiang Frank Wang, Min Sun</p>
                     <h4 class = "text">Robust Motion Artifact Reduction of Photoplethysmographic Signal with Trajectory Space Circular Model</h4>                 
                   </div>
                   <h4>ICASSP Signal Processing Cup 2015</h4>
-                  <p><a href="#">[Details]</a> <a href="http://stmharry.github.io/pdf/ICASSP_2015.pdf">[PDF]</a> </p>
+                  <p><a class = "popout" id = "proj4">[Details]</a> <a href="http://stmharry.github.io/pdf/ICASSP_2015.pdf">[PDF]</a> </p>
                 </article>
               </div>            
               <div class="4u 12u(mobile)">
@@ -169,7 +170,7 @@ Yu-Chiang Frank Wang, Min Sun</p>
                     <h4 class = "text">ECGA-community Detection on <br> Paper Co-Author Network</h4>                 
                   </div>
                   <h4>Genetic Algorithm 2015 Fall</h4>
-                  <p><a href="#">[Details]</a></p>
+                  <p><a class = "popout" id = "proj5">[Details]</a></p>
                 </article>
               </div>
               <div class="4u 12u(mobile)">
@@ -179,7 +180,7 @@ Yu-Chiang Frank Wang, Min Sun</p>
                     <h4 class = "text">Panoramas Stitching</h4>                 
                   </div>
                   <h4>Digital Visual Effects 2015 Spring</h4>
-                  <p><a href="#">[Details]</a></p>
+                  <p><a class = "popout" id = "proj6">[Details]</a></p>
                 </article>
               </div>
             </div>
@@ -194,87 +195,190 @@ Yu-Chiang Frank Wang, Min Sun</p>
           </footer>
         </article>
       </div>
-   
-     
-     
-    <!-- Contact
-      <div class="wrapper style4">
-        <article id="contact" class="container 75%">
-          <header>
-            <h2>Have me make stuff for you.</h2>
-            <p>Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.</p>
-          </header>
-          <div>
-            <div class="row">
-              <div class="12u">
-                <form method="post" action="#">
-                  <div>
-                    <div class="row">
-                      <div class="6u 12u(mobile)">
-                        <input type="text" name="name" id="name" placeholder="Name" />
-                      </div>
-                      <div class="6u 12u(mobile)">
-                        <input type="text" name="email" id="email" placeholder="Email" />
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="12u">
-                        <input type="text" name="subject" id="subject" placeholder="Subject" />
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="12u">
-                        <textarea name="message" id="message" placeholder="Message"></textarea>
-                      </div>
-                    </div>
-                    <div class="row 200%">
-                      <div class="12u">
-                        <ul class="actions">
-                          <li><input type="submit" value="Send Message" /></li>
-                          <li><input type="reset" value="Clear Form" class="alt" /></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="row">
-              <div class="12u">
-                <hr />
-                <h3>Find me on ...</h3>
-                <ul class="social">
-                  <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                  <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                  <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-                  <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                  <li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-                  <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-                  <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-                  <!--
-                  <li><a href="#" class="icon fa-rss"><span>RSS</span></a></li>
-                  <li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>
-                  <li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li>
-                  <li><a href="#" class="icon fa-skype"><span>Skype</span></a></li>
-                  <li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li>
-                  <li><a href="#" class="icon fa-youtube"><span>YouTube</span></a></li>
-                  <li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li>
-                  <li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li>
-                  <li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>
-                 
-                </ul>
-                <hr />
-              </div>
+
+
+    <!-- Detail Pages -->
+      <div id="page_paper1" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_paper1').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>No More Discrimination: <br> Cross City Adaptation of Road Scene Segmenters</h2>
+          <p>Yi-Hsin Chen, <strong>Wei-Yu Chen</strong>, Yu-Ting Chen, Bo-Cheng Tsai, Yu-Chiang Frank Wang, Min Sun, <i>in ICCV 2017</i></p>
+          <div class = "box_container">
+            <div class = "box_left"><image width="320" src="images/paper1_detail.png"></image></div>   
+            <div class = "box_right"> Scene segmentation is the recognition and location of objects in a scene; road scene segmentation is the core technique in advanced driver  assistance systems (ADAS). <br>
+            However, due to the diversity of city appearances around the world, it is difficult to segment scenes for all cities with training data from only one specific city. <br>
+            In this project, we solve this problem by using domain adaptation techniques to exploit information in unlabeled city scenes from Google Maps.
             </div>
           </div>
-          <footer>
-            <ul id="copyright">
-              <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-          </footer>
-        </article>
+        </div>       
       </div>
-     -->  
+      <div id="page_paper2" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_paper2').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>Transfer Neural Trees for <br> Heterogeneous Domain Adaptation</h2>
+          <p><strong>Wei-Yu Chen</strong>, Tzu-Ming Hsu, Yao-Hung Tsai, Yu-Chiang Frank Wang, Ming-Syan Chen, <i>in ECCV 2016</i></p>
+          <div class = "box_container">
+            <div class = "box_left"><image width="320" src="images/paper2_detail.png"></image></div>   
+            <div class = "box_right"> Heterogeneous domain adaptation (HDA) focuses on transferring classifier knowledge to different problem domains, for instance using text features to enhance image recognition accuracy. <br>
+            To solve the challenging HDA problems, existing approaches typically choose a domain-invariant feature space. In this work, we jointly learn the feature space and recognition together by integrating with a neural network structure. <br> 
+            Furthermore, we propose a neural decision forest and embedding loss to preserve structural consistency between cross-domain labeled data and unlabeled data.
+            </div>
+          </div>
+        </div>       
+      </div>          
+      <div id="page_paper3" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_paper3').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>Unsupervised Domain Adaptation with <br> Imbalanced Cross-Domain Data</h2>
+          <p>Tzu-Ming Harry Hsu, <strong>Wei-Yu Chen</strong>, Cheng-An Hou, Yao-Hung Hubert Tsai, Yi-Ren Yeh and Yu-Chiang Frank Wang, <i>in ICCV 2015</i></p>          
+          <div ><image src="images/paper3_detail.png"></image></div>   
+          <div class = "box_wide" > We address a challenging unsupervised domain adaptation problem with imbalanced cross-domain data. <br>
+          To mitigate domain differences, unsupervised domain adaptation exceptionally observes unlabeled data in the target domain along with labeled data in the source domain. However, most existing work assumes that the source domain consists of data from a single dataset, and that no more object classes are collected than are in the target domain, which is not practical. <br>
+          To relieve the aforementioned assumption, we propose closest common space learning (CCSL) to discover latent domains for exploiting both label and structural information within and across domains during adaptation.       
+          </div>
+        </div>       
+      </div> 
+      <div id="page_paper4" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_paper4').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>Enhanced Canonical Correlation Analysis with <br> Local Density for Cross-Domain Visual Classification</h2>
+          <p>Wei-Jen Ko, Jheng-Ying Yu, <strong>Wei-Yu Chen</strong>, and Yu-Chiang Frank Wang, <i>in ICASSP 2017</i></p>
+          <div class = "box_container">
+            <div class = "box_left"><image width="320" src="images/paper4_detail.png"></image></div>   
+            <div class = "box_right"> Canonical correlation analysis (CCA) is a classical algorithm for cross-domain visual classification, such as action recognition from different camera angles. <br>
+            To suppress outlier effects, we further exploit local density information observed from each domain.
+            </div>
+          </div>
+        </div>       
+      </div>   
+      <div id="page_paper5" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_paper5').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>Domain-Constraint Transfer Coding for <br> Imbalanced Unsupervised Domain Adaptation</h2>
+          <p>Yao-Hung Hubert Tsai, Cheng-An Hou, <strong>Wei-Yu Chen</strong>, Yi-Ren Yeh and Yu-Chiang Frank Wang, <i>in AAAI 2016</i></p>                    
+          <div class = "box_wide" > We address a challenging unsupervised domain adaptation problem with imbalanced cross-domain data. 
+          To mitigate domain differences, unsupervised domain adaptation exceptionally observes unlabeled data in the target domain along with labeled data in the source domain. However, most existing work assumes that the source domain consists of data from a single dataset, and that no more object classes are collected than are in the target domain, which is not practical. <br>
+          To relieve the aforementioned assumption, we apply sparse coding with locality constraints to both exploit latent subdomains within and also learn a common feature space for joint adaptation and classification purposes.    
+          </div>
+        </div>       
+      </div> 
+      <div id="page_paper6" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_paper6').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>Connecting the Dots Without Clues: <br>Unsupervised Domain Adaptation for <br>Cross-domain Visual Classification</h2>
+          <p><strong>Wei-Yu Chen</strong>, Tzu-Ming Harry Hsu, Cheng-An Hou, Yi-Ren Yeh and Yu-Chiang Frank Wang, <i>in ICIP 2015</i></p>
+          <div class = "box_container">
+            <div class = "box_left"><image width="320" src="images/paper6_detail.png"></image></div>   
+            <div class = "box_right"> Unsupervised domain adaptation concerns the domain difference between source- and target-domain data. 
+            For example, when training models for object recognition, one typically collects source-domain data from the Internet; however, target-domain data, or the images to predict, are often photos from a real camera. <br>
+            In this paper, we propose exploiting cross-domain data correspondences using both observed data similarity and labels transferred from the source domain.
+            </div>
+          </div>
+        </div>       
+      </div>  
+      <div id="page_proj1" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_proj1').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>Action Recognition with SegNet</h2>
+          <p>Advanced Topics In Multimedia Analysis And Indexing 2015 Spring</p>
+          <div class = "box_container">
+            <div class = "box_left"><iframe width="320" height="180" src="https://www.youtube.com/embed/EgpDtIhdL4E" frameborder="0" allowfullscreen></iframe></div>   
+            <div class = "box_right"> An implementation of a convolutional neural network (CNN) based action recognition system. <br>
+                The system is composed of two released CNN models. First we apply SegNet, a CNN structure for semantic segmentation, to segment human regions from images. Then we apply a model pre-trained on the PASCAL VOC action dataset to recognize human action.
+            </div>
+          </div>
+        </div>       
+      </div>
+      <div id="page_proj2" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_proj2').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>EUREKA</h2>
+          <p>EE Lab (Networking & Multimedia) 2015 Spring</p>
+          <div class = "box_container">
+            <div class = "box_left"><iframe width="320" height="180" src="https://www.youtube.com/embed/poOeX_pXGgY" frameborder="0" allowfullscreen></iframe></div>   
+            <div class = "box_right"> Eureka is a theft-proof device for bicycles that informs your smartphone when your bicycle is moved and helps you to locate it. <br>
+            Eureka is implemented on Raspberry PI with Wi-Fi, GPS and Bluetooth. With Wi-Fi it sends messages, with GPS it locates the device, and with Bluetooth it can receive a signal from your smartphone to ring it.
+            </div>
+          </div>
+        </div>       
+      </div>
+      <div id="page_proj3" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_proj3').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>Storage Robot</h2>
+          <p>Robotics 2013 Fall</p>
+          <div class = "box_container">
+            <div class = "box_left"><iframe width="320" height="180" src="https://www.youtube.com/embed/HgiEmOA_1hw" frameborder="0" allowfullscreen></iframe></div>   
+            <div class = "box_right"> A clerk robot includes a Kinect camera, a Pioneer mobile robot, and a UAL5D robot arm. <br>
+            This robot can understand simple commands such as “deposit belongings” or “withdraw belongings”. On command, this robot moves to the shelf, grips a box, approaches users, and lets them deposit or withdraw their belongings. It then puts the box back and returns to its original place. <br>
+            It integrates sound recognition, image processing, and robot arm control.
+            </div>
+          </div>
+        </div>       
+      </div>
+      <div id="page_proj4" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_proj4').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>Robust Motion Artifact Reduction of <br> Photoplethysmographic Signal with <br> Trajectory Space Circular Model</h2>
+          <p>ICASSP Signal Processing Cup 2015</p>
+          <div class = "box_container">
+            <div class = "box_left"><image width="280" src="images/proj4_detail.png"></image></div>   
+            <div class = "box_right"> During a competition to analyze heart rates during physical exercise using wrist-type photoplethysmographic (PPG) signals, team Taipei Amoeba achieved 10th place with an error of 4.89 beats per minute (BPM). <br>
+            To eliminate motion artifacts, we applied multivariate singular spectrum analysis (MSSA) to decompose the PPG signal and remove motion-related components taking into account the accelerator signal. <br>
+            To further suppress irregular noise, we proposed the trajectory space circular model to trace phase angle changes. 
+            </div>
+          </div>
+        </div>       
+      </div>
+      <div id="page_proj5" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_proj5').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>ECGA-community Detection on <br> Paper Co-Author Network</h2>
+          <p>Genetic Algorithm 2015 Fall</p>
+          <div class = "box_container">
+            <div class = "box_left"><image width="320" src="images/proj5_detail.png"></image></div>   
+            <div class = "box_right"> This project uses a genetic algorithm to discover relationships between co-authors of academic works. <br>
+            First we crawl data from Google Scholar and build a graph of the co-author network, in which authors are vertices and are connected by links if they have cooperated on the same work. <br>
+            To analyze the fields of studies that appear in this network, we apply the Extended Compact Genetic Algorithm (ECGA) to detect communities. 
+            </div>
+          </div>
+        </div>       
+      </div>
+      <div id="page_proj6" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('page_proj6').style.display='none'">&times;</span>
+        <!-- Modal Content -->               
+        <div class="modal-content">
+          <h2>Panoramas Stitching</h2>
+          <p>Digital Visual Effects 2015 Spring</p>         
+          <div><a href="./images/proj6_detail.png" target="_blank"><image width="800" src="images/proj6_detail.png"></image></a></div>   
+          <div class = "box_wide"> An implementation of a series of algorithms for panorama stitching from scratch, including Harris corner detection, MSOP feature description, kd-tree matching, image alignment, bundle adjustment, and image seaming. (Click to see full image.)
+          </div>
+        </div>       
+      </div>
+   
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
