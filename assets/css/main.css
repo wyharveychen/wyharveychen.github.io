@@ -1302,7 +1302,7 @@
 			display: block;
 			width: 100%;
 		}
-
+   
 		.image.fit {
 			display: block;
 			width: 100%;
@@ -1311,16 +1311,9 @@
     
 		.image.featured {
 			display: block;
-      height: 200px;
+      /*height: 200px;*/
 			width: 95%;
 			margin: 0em 0em 2em 0em;
-		}
-
-    .image.featuredshort {
-			display: block;     
-      height: 150px;
-			width: 100%;
-			margin: 0 0 2em 0;
 		}
     
 		.image.left {
@@ -1337,6 +1330,22 @@
 				margin: 0 auto;
 				width: auto;
 			}
+      
+/* Iframe */
+	.iframe {
+		display: inline-block;
+		position: relative;
+	}
+    .iframe iframe {
+			display: block;
+      width: 100%; 
+      max-width: 300px;   
+      margin: 0 auto;
+		}
+    .iframe.featured {
+        display: block;        
+        width: 95%;        
+      }
 
 /* Titles */      
      
