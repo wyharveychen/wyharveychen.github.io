@@ -21,7 +21,7 @@
 		});
 
 	$(function() {
-
+    var $is_content = false;
 		var	$window = $(window),
 			$body = $('body');
 
@@ -31,20 +31,6 @@
 			$window.on('load', function() {
 				$body.removeClass('is-loading');
 			});
-
-      $window.on('hashchange', function(event) {
-					// Empty hash?
-						if (location.hash != ''
-						||	location.hash != '#') {
-							// Hide.
-                //event.preventDefault();
-								//event.stopPropagation();
-                $("ol").hide();                  
-								$("ol#" + location.hash.substr(1)).show();                
-                //event.preventDefault();
-								//event.stopPropagation();
-						}            
-      });      
       
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
@@ -64,24 +50,38 @@
 		// Scrolly.
 			$window.load(function() {
         
-				var x = parseInt($('.wrapper').first().css('padding-top')) - 15;
+				var x = parseInt($('.wrapper').first().css('padding-top')) - 5;
 				$('#nav a, .scrolly').scrolly({
 					speed: 1000,
 					offset: x
 				});         
 			});  
-      $("ol").hide();         
-      if (location.hash != ''
-        &&	location.hash != '#')
-          $window.on('load', function() {
-            $("ol#" + location.hash.substr(1)).show();
-      });
-      
-      
+              
       $(".popout").on( "click", function(event) {      
           $("#page_" + event.target.id).show();  
+          $('html, body').css({
+              overflow: 'hidden',            
+          });
       });
 
+      $(".modal-content").on( "click", function(event) {               
+          $is_content = true              
+      });
+      
+      $(".modal").on( "click", function(event) {      
+          //$("#page_" + event.target.id).show();  
+          var $this = $(this);
+          if($is_content){
+            $is_content = false 
+          }else{
+            $this.hide() 
+            $('html, body').css({
+                overflow: 'auto',              
+            });            
+          }
+      });
+            
+      
   });
 })(jQuery);
 

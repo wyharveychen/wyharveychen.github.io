@@ -2480,11 +2480,16 @@
 			transform: scale(0.8) rotate(-30deg);
 		}
 
+ /*Pop out button*/
+ .popout:hover{
+  cursor: pointer
+}
+    
  /* Modal */
  .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 10001; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -2543,4 +2548,13 @@
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+/*weiyu*/
+#weiyu {
+  margin: 20px 0 20px 0 !important;
+}
+#mymail {
+  margin: 10px 0 30px 0 !important;
+  font-weight: normal; !important;
 }
